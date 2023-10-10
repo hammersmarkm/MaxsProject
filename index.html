@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz and its Effect on American Culture</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .bigTitle{
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 4vw;
+        }
+        .singleArtifactContainerL, .singleArtifactContainerR{
+            display: block;
+            position: relative;
+            width: 75vw;
+            height: 50vh;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+            overflow: hidden;
+        }
+        .singleArtifactContainerL {
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to right, blue, gray) 1;
+            float: left;
+            margin-left: 20px;
+            background-image: linear-gradient(to right, #8C8FFF, gray);
+            background-color: #8C8FFF;
+        }
+        .singleArtifactContainerR {
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to left, blue, gray) 1;
+            float: right;
+            margin-right: 20px;
+            background-image: linear-gradient(to left, #AEB1FF, gray);
+        }
+
+        .artifactContentContainerL, .artifactContentContainerR {
+            width: 37.5vw; /* (75/2) */
+            z-index: 0;
+            height: 100%;
+            position: relative;
+        }
+
+        .artifactContentContainerR {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .artifactTitle {
+            font-family: 'Roboto Mono', monospace;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-bottom: 0;
+        }
+
+        .artifactDescription {
+            padding-left: 1vw;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .artifactAudio {
+            position: relative;
+            text-align: center;
+            margin:auto;
+            margin-top: auto;
+            margin-bottom: 0;
+            bottom: 0;
+        }
+
+        .centerContents {
+            position: relative;
+            text-align: center;
+            bottom: 0;
+        }
+
+        .artifactImageL, .artifactImageR {
+            position: absolute;
+            /* height: 40vh; */
+            width: 20vw;
+            top: calc(25vh - 10vw);
+            /* margin-top: auto;
+            margin-bottom: auto; */
+        }
+        .artifactImageL {
+            right: 0%;
+        }
+        .artifactImageR{
+            left: 0%;
+        }
+
+        .learnMoreAnchorTagL {
+            position: absolute;
+            bottom: 0;
+            width: 37.5vw;
+            left: 0;
+            font-size: 1.5em;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .learnMoreAnchorTagR {
+            position: absolute;
+            bottom: 0;
+            width: 37.5vw;
+            right: 0;
+            font-size: 1.5em;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
+
+    <h1 class="bigTitle">Jazz and its Effect on American Culture</h1>
+    <hr>
+
+    <div class="singleArtifactContainerL">
+        <div class="artifactContentContainerL">
+            <h3 class="artifactTitle">Jubilee Stomp</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageL" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagL" href="learnMorePages/JubileeStompPage.html">(Learn More)</a>
+    </div>
+    
+    <div class="singleArtifactContainerR">
+        <div class="artifactContentContainerR">
+            <h3 class="artifactTitle">Sing Sing Sing</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageR" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagR" href="learnMorePages/SingSingSingPage.html">(Learn More)</a>
+    </div>
+
+    <div class="singleArtifactContainerL">
+        <div class="artifactContentContainerL">
+            <h3 class="artifactTitle">A Night In Tunisia</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageL" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagL" href="learnMorePages/ANightInTunisiaPage.html">(Learn More)</a>
+    </div>
+    
+    <div class="singleArtifactContainerR">
+        <div class="artifactContentContainerR">
+            <h3 class="artifactTitle">Take the A Train</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageR" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagR" href="learnMorePages/TakeTheATrainPage.html">(Learn More)</a>
+    </div>
+
+    <div class="singleArtifactContainerL">
+        <div class="artifactContentContainerL">
+            <h3 class="artifactTitle">Flight of the Foo Birds</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageL" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagL" href="learnMorePages/FlightOfTheFooBirdsPage.html">(Learn More)</a>
+    </div>
+    
+    <div class="singleArtifactContainerR">
+        <div class="artifactContentContainerR">
+            <h3 class="artifactTitle">Moanin'</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageR" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagR" href="learnMorePages/MoaninPage.html">(Learn More)</a>
+    </div>
+
+    <div class="singleArtifactContainerL">
+        <div class="artifactContentContainerL">
+            <h3 class="artifactTitle">West Coast Jazz - Stan Getz</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageL" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagL" href="learnMorePages/WestCoastJazzPage.html">(Learn More)</a>
+    </div>
+    
+    <div class="singleArtifactContainerR">
+        <div class="artifactContentContainerR">
+            <h3 class="artifactTitle">Girl From Ipanema</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageR" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagR" href="learnMorePages/GirlFromIpanemaPage.html">(Learn More)</a>
+    </div>
+
+    <div class="singleArtifactContainerL">
+        <div class="artifactContentContainerL">
+            <h3 class="artifactTitle">My Favorite Things</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageL" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagL" href="learnMorePages/MyFavoriteThingsPage.html">(Learn More)</a>
+    </div>
+    
+    <div class="singleArtifactContainerR">
+        <div class="artifactContentContainerR">
+            <h3 class="artifactTitle">Chameleon</h3>
+            <p class="artifactDescription">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="centerContents"><audio class="artifactAudio" src="Audio/splanky.mp3" controls></audio></div>
+        </div>
+
+        <img class="artifactImageR" src="Images/TestImage.png" alt="Cute kitten!">
+        
+        <a class="learnMoreAnchorTagR" href="learnMorePages/ChameleonPage.html">(Learn More)</a>
+    </div>
+</body>
+</html>
